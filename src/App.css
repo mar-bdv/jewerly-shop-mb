@@ -1,38 +1,700 @@
-.App {
-  text-align: center;
+body{
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-nav{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  border-bottom: 1px solid #D7B458;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-link{
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #808080;
+  padding: 10px 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-link:hover{
+  font-weight: bold;
+  color: #D7B458;
+}
+.top-link:focus{
+  font-weight: bold;
+  color: #D7B458;
+}
+h1{
+  font-family: 'Playfair Display', serif; 
+  font-size: 50px;
+}
+.par-home{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+.home-mainDiv{
+  display: flex;
+  justify-content: space-evenly;
+}
+.home-bigImg{
+  padding: 10px;
+  margin-top: 50px;
+}
+.home-bigText{
+  padding: 10px;
+  margin-top: 50px;
+  margin-right: 220px;
+}
+.home-btn{
+  background-color: white;
+  border: 2px solid #D7B458;
+  color: #D7B458;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  padding: 15px 50px;
+  font-size: 20px;
+  margin-top: 50px;
+  letter-spacing: 0.13em;
+}
+.home-btn:hover{
+  background-color: #D7B458;
+  color: white;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 70px;
+  font-family: 'Open Sans', sans-serif;
+}
+footer p{
+  margin: 0px;
+  font-size: 15px;
+}
+footer a{
+  color: #D7B458;
+}
+.contacts-head{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.contacts-head h2{
+  margin-top: 35px;
+  font-family: 'Playfair Display', serif; 
+  text-transform: uppercase;
+}
+.contacts-text{
+  margin-left: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+.contacts-text p{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.contacts-text h3{
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.contacts-bigDiv{
+  display: flex;
+  justify-content: space-around;
+}
+.slides-div{
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 30px;
+  
+}
+.slides-text{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.slides-text p{
+  width: 400px;
+  font-size: 18px;
+}
+.slides-text h3{
+  font-family: 'Playfair Display', serif; 
+  font-size: 30px;
+}
+.contacts-btns{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.contacts-btns button{
+  margin: 40px 100px;
+  background-color: rgb(0, 0, 0, 0);
+  border: none;
+}
+.contacts-btns button:hover{
+  cursor: pointer;
+}
+.contacts-btns button img{
+  width: 50px;
+}
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+  width: 270px;
+  position: fixed;
+  z-index: 1;
+  /* top: 0; */
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Style sidebar links */
+.sidebar button {
+  padding: 6px 8px 6px 86px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #000000;
+  display: block;
+  background-color: white;
+  border: none;
+  width: 270px;
+  text-align: start;
+}
+
+/* Style links on mouse-over */
+.sidebar button:hover {
+  color: #f1f1f1;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 270px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+.sidebar h3{
+  font-family: 'Playfair Display', serif; 
+  font-size: 27px;
+  padding: 10px;
+  padding-left: 63px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.product-bigDiv{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: 200px;
+  padding-bottom: 0px;
+  align-items: stretch;
+}
+.product-div{
+  border: .2px solid #E4E4E4;
+  padding: 10px;
+  margin: 20px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-div img{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.product-name{
+  width: 160px;
+  font-size: 18px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.product-text{
+  font-size: 15px;
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 160px;
+}
+.product-text button{
+  color: #D7B458;
+  text-decoration: underline;
+  background-color: white;
+  border: none;
+}
+.product-div h3{
+  font-family: 'Playfair Display', serif; 
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.product-btn{
+  background-color: black;
   color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px;
+  border: none;
+}
+.product-btn:hover{
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 1404px){
+  .contacts-map{
+    width: 500px;
+    height: 400px;
+    margin: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .contacts-bigDiv h3{
+    font-size: 25px;
+  }
+  .contacts-bigDiv p{
+    font-size: 19px;
+  }
+}
+
+@media all and (max-width: 1347px){
+  .home-mainDiv{
+    margin: 10px;
+  }
+  .main{
+    margin-left: 150px;
+  }
+  .product-div img{
+    width: 170px;
+  }
+  .product-div h3{
+    font-size: 23px;
+  }
+  .product-name{
+    font-size: 17px;
+  }
+  .product-text{
+    font-size: 15px;
+  }
+  .product-btn{
+    font-size: 15px;
+    padding: 8px 10px;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+@media all and (max-width: 1114px){
+  h1{
+    font-size: 44px;
+  }
+  .home-bigText img{
+    width: 200px;
+  }
+  .home-btn{
+    border: 2px solid #D7B458;
+    font-weight: 500;
+    padding: 15px 40px;
+    font-size: 18px;
+    margin-top: 80px;
+    letter-spacing: 0.10em;
+  }
+  .par-home{
+    font-size: 26px;
+  }
+  .home-bigImg img{
+    width: 400px;
+  }
+  .contacts-map{
+    width: 400px;
+    height: 330px;
+    margin: 10px;
+  }
+  .contacts-bigDiv h3{
+    font-size: 25px;
+  }
+  .contacts-bigDiv p{
+    font-size: 17px;
+  }
+  .slides-div img{
+    width: 400px;
+  }
+  .slides-text h3{
+    font-size: 25px;
+  }
+  .slides-text p{
+    font-size: 18px;
+  }
+  .contacts-btns button img{
+    width: 50px;
+  }
+}
+
+@media all and (max-width: 1088px){
+  .product-bigDiv{
+    margin-left: 100px;
+  }
+  .sidebar h3{
+    font-size: 30px;
+  }
+  .sidebar button{
+    font-size: 17px;
+  }
+  .sidebar{
+    width: 250px;
+  }
+  .product-div img{
+    width: 150px;
+  }
+  .product-div h3{
+    font-size: 22px;
+  }
+  .product-name{
+    font-size: 15px;
+  }
+  .product-text{
+    font-size: 13px;
+  }
+  .product-btn{
+    font-size: 14px;
+    padding: 6px 8px;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+@media all and (max-width: 960px){
+  .home-bigImg img{
+    width: 350px;
+  }
+  .home-bigText img{
+    width: 150px;
+  }
+  .home-bigText p{
+    font-size: 21px;
+  }
+  .home-btn{
+    border: 2px solid #D7B458;
+    font-weight: 500;
+    padding: 13px 25px;
+    font-size: 15px;
+    margin-top: 80px;
+    letter-spacing: 0.1em;
+  }
+  .product-bigDiv{
+    margin-left: 80px;
+  }
+  .sidebar h3{
+    font-size: 28px;
+  }
+  .sidebar button{
+    font-size: 17px;
+  }
+  .sidebar{
+    width: 230px;
+  }
+  .product-div img{
+    width: 140px;
+  }
+  .product-div h3{
+    font-size: 20px;
+  }
+  .product-name{
+    font-size: 14px;
+  }
+  .product-text{
+    font-size: 11px;
+  }
+  .product-btn{
+    font-size: 13px;
+    padding: 6px 7px;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .product-div{
+    margin: 20px 10px;
+  }
+  .slides-div img{
+    width: 300px;
+  }
+  .slides-text h3{
+    font-size: 22px;
+  }
+  .slides-text p{
+    font-size: 16px;
+  }
+  .contacts-btns button img{
+    width: 40px;
+  }
+}
+
+@media all and (max-width: 876px){
+  .contacts-bigDiv{
+    flex-wrap: wrap;
+  }
+  .sidebar h3{
+    padding-left: 30px;
+  }
+  .sidebar button{
+    padding: 6px 8px 6px 60px;
+  }
+  .sidebar{
+    width: 190px;
+  }
+  .product-bigDiv{
+    margin-left: 30px;
+  } 
+  .home-bigImg img{
+    width: 320px;
+  }
+  .home-bigText img{
+    width: 130px;
+  }
+  .home-bigText p{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 40px;
+  }
+  .home-btn{
+    border: 2px solid #D7B458;
+    font-weight: 500;
+    padding: 13px 25px;
+    font-size: 14px;
+    margin-top: 80px;
+    letter-spacing: 0.1em;
+  }
+}
+@media all and (max-width: 840px){
+  .top-link{
+    font-size: 23px;
+  }
+  .home-bigImg img{
+    width: 300px;
+  }
+  .home-bigText img{
+    width: 140px;
+  }
+  h1{
+    font-size: 35px;
+  }
+  .home-bigText p{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  .home-btn{
+    border: 2px solid #D7B458;
+    font-weight: 500;
+    padding: 13px 35px;
+    font-size: 15px;
+    margin-top: 80px;
+    letter-spacing: 0.1em;
+  }
+  .home-bigText{
+    margin-right: 70px;
+  }
+  .product-div img{
+    width: 160px;
+  }
+  .product-div h3{
+    font-size: 22px;
+  }
+  .product-name{
+    font-size: 15px;
+  }
+  .product-text{
+    font-size: 13px;
+  }
+  .product-btn{
+    font-size: 13px;
+    padding: 6px 7px;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .product-div{
+    margin: 20px 5px;
+  }
+  .product-bigDiv{
+    padding: 5px;
+  }
+  .slides-div img{
+    width: 250px;
+  }
+  .slides-text h3{
+    font-size: 22px;
+  }
+  .slides-text p{
+    font-size: 15px;
+    width: 200px;
+  }
+}
+@media all and (max-width: 793px){
+  .product-div img{
+    width: 180px;
+  }
+  .product-div h3{
+    font-size: 23px;
+  }
+  .product-name{
+    font-size: 15px;
+  }
+  .product-text{
+    font-size: 13px;
+  }
+  .product-btn{
+    font-size: 13px;
+    padding: 6px 7px;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .product-div{
+    margin: 20px 15px;
+  }
+  .product-bigDiv{
+    padding: 5px;
+    margin-left: 60px;
+  }
+}
+@media all and (max-width: 704px){
+  .product-div img{
+    width: 160px;
+  }
+  .product-div h3{
+    font-size: 21px;
+  }
+  .product-name{
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 667px){
+  .sidebar{
+    width: 160px;
+  }
+  .sidebar button{
+    padding-left: 30px;
+  }
+  .sidebar h3{
+    padding-left: 20px;
+  }
+  .product-bigDiv{
+    padding: 2px;
+    margin-left: 20px;
+  }
+  .home-btn{
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  .main{
+    padding: 2px;
+  }
+  .top-link{
+    font-size: 21px;
+  }
+}
+@media all and (max-width: 609px){
+  .product-div img{
+    width: 140px;
+  }
+  .product-div h3{
+    font-size: 21px;
+  }
+  .product-name{
+    font-size: 15px;
+    width: 130px;
+  }
+  .product-text{
+    width: 130px;
+  }
+  .product-btn {
+    font-size: 13px;
+    padding: 4px 7px;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .home-mainDiv{
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-bigText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+  }
+  h1{
+    font-size: 40px;
+  }
+  .home-bigText p {
+    font-size: 24px;
+  }
+  .home-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  .contacts-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sidebar h3{
+    font-size: 25px
+  }
+  .sidebar{
+    width: 130px;
+  }
+  .sidebar button{
+    padding-left: 24px;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .product-bigDiv{
+    padding: 2px;
+    margin-left: 0px;
+  }
+  .home-btn{
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  
+}
+
+@media all and (max-width: 549px){
+  .product-div {
+    margin: 20px 5px;
+  }
+  .slides-div img{
+    width: 220px;
+  }
+  .slides-text {
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+  .top-nav{
+    flex-direction: column;
+    align-items: center;
   }
 }
