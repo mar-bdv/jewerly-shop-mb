@@ -8,11 +8,11 @@ function Shop(){
             element.product === product)
         setProducts(newProducts)
     }
-    const chosenProductsTwo = (allProducts) => {
-        const newProducts = dataShop.filter(element =>
-            element.allProducts === allProducts)
-        setProducts(newProducts)
-    }
+    // const chosenProductsTwo = (allProducts) => {
+    //     const newProducts = dataShop.filter(element =>
+    //         element.allProducts === allProducts)
+    //     setProducts(newProducts)
+    // }
     const [showText, setShowText] = useState(true)
 
     const showTextClick = (element) =>{
@@ -30,7 +30,7 @@ function Shop(){
             </div>
             <div className="sidebar">
                 <h3>РАЗДЕЛ</h3>
-                <button  onClick={() => chosenProductsTwo("all")}>Всё (19)</button>
+                <button  onClick={() => setProducts(dataShop)}>Всё (19)</button>
                 <button onClick={() => chosenProducts("earrings")}>Серьги (6)</button>
                 <button onClick={() => chosenProducts("ring")}>Кольца (5)</button>
                 <button onClick={() => chosenProducts("bracelet")}>Браслеты (3)</button>

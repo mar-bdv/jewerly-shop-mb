@@ -3,9 +3,9 @@ import girl from './images/home-girl.png';
 import { Link } from 'react-router-dom'
 
 function Home(){
-    const shopLink = (item) => () => {
-        window.location.href = item;
-    }
+    // const shopLink = (item) => () => {
+    //     window.location.href = item;
+    // } onClick = {() => shopLink('./shop')}
     
     return(
         <div>
@@ -14,8 +14,8 @@ function Home(){
                     <h1>Новая коллекция</h1>
                     <p className="par-home">Успейте приобрести!</p>
                     <img src={earrings} alt="earrings"/><br/>
-                    <Link to="/shop">
-                        <button  className='home-btn' onClick = {() => shopLink('./shop')}>
+                    <Link to="/Shop">
+                        <button  className='home-btn'>
                             ПЕРЕЙТИ В КАТАЛОГ 
                         </button>
                     </Link>
