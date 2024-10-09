@@ -35,9 +35,7 @@ function Contacts(){
                     </div>
             </div>
             <footer><br/><br/><br/>
-                <p>Сайт не настоящий!</p><br/>
                 <p>Все материалы были взяты в учебных целях</p> <br/>
-                <p>Сайт был сделан <a href="http://web-mariam.glitch.me/" target="blank">Mariam</a></p>
             </footer>
         </div>
     )
